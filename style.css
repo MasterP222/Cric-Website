@@ -225,3 +225,110 @@ html {
     outline: 2px solid var(--cricket-gold);
     outline-offset: 2px;
 }
+
+/* About Me Section */
+.about-me {
+    padding: 5rem 1rem;
+    background: linear-gradient(to bottom, var(--cricket-light-green), var(--cricket-white));
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-size: 1.125rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--cricket-green);
+    color: var(--cricket-white);
+    padding: 3rem 1rem 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    text-align: left;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cricket-gold);
+}
+
+.footer-subtitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--cricket-gold);
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+
+/* Focus states for accessibility */
+.image-container:focus-within {
+    outline: 2px solid var(--cricket-gold);
+    outline-offset: 2px;
+}
+
+/* Additional responsive styles for new sections */
+@media (max-width: 768px) {
+    .about-me {
+        padding: 3rem 1rem;
+    }
+    
+    .about-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .footer {
+        padding: 2rem 1rem 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+}
+
